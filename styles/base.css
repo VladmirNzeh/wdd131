@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: verdena;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  h1 {
+    font-size: 2rem;
+    color: whitesmoke; /* Black text */
+    white-space: normal;
+    overflow: visible;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #002B5C;
+  }
+  
+  .highlight {
+    color: whitesmoke;
+    font-weight: bold;
+  }
+  
+  /* Header */
+  header {
+    background-color: #002B5C;
+    color: white;
+    padding: 1em;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+  }
+  
+  nav a:hover {
+    background-color: #F39C12;
+  }
+  
+  /* Main */
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two columns: wider left, narrow right */
+    grid-template-rows: auto auto; /* Rows adjust based on content height */
+    grid-template-areas:
+      "about-me web-resources"
+      "location web-resources";
+    gap: 1em;
+    max-width: 1200px;
+    margin: 2em auto;
+  }
+  
+  /* Section Styling */
+  .card {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 1em;
+    border-radius: 8px;
+  }
+  
+  .about-me {
+    grid-area: about-me; /* Top-left */
+  }
+  
+  .location {
+    grid-area: location; /* Bottom-left */
+  }
+  
+  .web-resources {
+    grid-area: web-resources; /* Right side, spanning two rows */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .web-resources ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .web-resources li a {
+    text-decoration: none;
+    color: #002B5C;
+  }
+  
+  .web-resources li a:hover {
+    color: #F39C12;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #002B5C;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  footer p {
+    margin: 0.5em 0;
+  }
+  
