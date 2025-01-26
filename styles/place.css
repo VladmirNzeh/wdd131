@@ -1,0 +1,119 @@
+
+:root {
+  --general-font: "Roboto", sans-serif;
+  --primary-color: #004400;
+  --secondary-color: #004400;
+  --primary-font-color: #eee;
+  --weather-icon: url(../images/weather.webp)
+}
+
+body {
+  font-family: var(--general-font);
+  max-width: 1500px;
+  margin: auto;
+  min-height: 1vh;
+}
+
+header {
+  background-color: #004400;
+  padding-bottom: 1em;
+}
+
+h1 {
+  text-align: center;
+  background-color: var(--primary-color);
+  padding: .5em 1em;
+  margin: 0;
+  color: var(--primary-font-color);
+}
+
+img {
+  width: 100%;
+  margin: 0;
+}
+picture {
+  background-color: var(--primary-color);
+}
+
+.card {
+  border-bottom: 1px solid #c6c4c4;
+  text-align: center;
+}
+
+.card img {
+  margin: -1em;
+  width: 150px;
+}
+
+.card table {
+  padding-bottom: 1em;
+  width: 100%;
+}
+
+th {
+  text-align: end ;
+  width: 50%;
+}
+
+td {
+  text-align: start;
+  width: 50%;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: .5em;
+  color: var(--primary-font-color);
+}
+
+@media screen and (min-width: 750px){
+  h1 {
+      padding: 1em;
+  }
+  h2 {
+      position: relative;
+      right: .5em;
+      text-align: left;
+      color: var(--primary-font-color);
+      background-color: rgb(0, 68, 0, 80%);
+      padding: .5em 1em .5em 1em;
+      margin: .5em 0;
+  }
+
+  .card {
+      position: absolute;
+      background-color: rgb(238, 238, 238, 80%);
+      padding: 0;
+  }
+  .card img {
+      display: none;
+  }
+
+  main {
+      position: relative;
+      width: 100%;
+      background-color: aliceblue;
+  }
+
+  .temp {
+      position: absolute;
+      width: 250px;
+      margin: 0;
+      right: 1.5em;
+      bottom: 3em;
+  }
+
+  .temp h2::after {
+      content: " __";
+      color: rgb(0, 68, 0, 0%);
+      background-image: var(--weather-icon);
+      width: 40px;
+  }
+
+  .data {
+      width: 300px;
+      left: 1.5em;
+      top: 3em;
+  }
+}
