@@ -1,0 +1,84 @@
+/* Global CSS Variables */
+:root {
+    --primary-color: #013468;
+    --secondary-color: #ffca38;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --line-height: 1.6;
+    --max-width: 1500px;
+    --font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Global Reset and Basic Styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: var(--line-height);
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+  }
+  
+  nav ul li {
+    margin: 0 1em;
+  }
+  
+  nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 1em;
+  }
+  
+  section#intro {
+    text-align: center;
+    margin: 2em auto;
+  }
+  
+  section#tools {
+    text-align: center;
+    margin: 1rem auto;
+    padding: 0;
+    position: relative;
+  }
+
+
+  footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  
